@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="quest1">
+		<h2 class="text">Вопрос первый. Сезон первый. Где Диппер нашел третий дневник?</h2>
+		<div class="quest1b"><h2>В яме, которую открывал рычаг в сосне.</h2></div>
+		<div class="quest2b"><h2>В ящике дяди Стена с надписью "абсолютно секретно</h2>"</div>
+		<div class="quest3b"><h2>В подземелье Перевертыша.</h2></div>
+	</div>
+
+	<div class="quest2">
+		<h2 class="text2">Вопрос второй. Сезон первый. Почему старик МакГаккет начал строить роботов и пугать ими людей?</h2>
+		<div class="quest1b2"><h2>Люди из Гравити Фолз ненавидели МакГаккета, он стал им мстить.</h2></div>
+		<div class="quest2b2"><h2>Его сын не писал ему и не разговаривал с ним. С горя он начал заниматься постройками роботов.</h2></div>
+		<div class="quest3b2"><h2>Его подкупили на это люди из общества Слепого глаза.</h2></div>
+	</div>
+
+	<div class="quest3">
+		<h2 class="text3">Вопрос третий. Сезон первый. Что понравилось Гидеону в Мейбл?</h2>
+		<div class="quest1b3"><h2>Ее "густые" волосы</h2></div>
+		<div class="quest2b3"><h2>Ее "удивительные" глаза.</h2></div>
+		<div class="quest3b3"><h2>Ее "прекрасный" смех.</h2></div>
+	</div>
+
+	<div class="quest4">
+		<h2 class="text4">Вопрос четвертый. Сезон первый. Какая музыка играет?</h2>
+		<audio controls>
+			<source src="music.mp3">
+		</audio>
+		<div class="quest1b4"><h2>Семья пайнс.</h2></div>
+		<div class="quest2b4"><h2>Девчонки эти зажигают вечер.</h2></div>
+		<div class="quest3b4"><h2>Зомбическая музыка!</h2></div>
+	</div>
+
+	<script>
+		document.querySelector(".quest1b").onclick = function(){
+			alert("Правильно!")
+			document.querySelector(".quest1").style.display = "none"
+			document.querySelector(".quest2").style.display = "block"
+		}
+
+		document.querySelector(".quest2b").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		document.querySelector(".quest3b").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		// ----------------------------------------------------------
+
+		document.querySelector(".quest1b2").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		document.querySelector(".quest2b2").onclick = function(){
+			alert("Правильно!")
+			document.querySelector(".quest2").style.display = "none"
+			document.querySelector(".quest3").style.display = "block"
+		}
+
+		document.querySelector(".quest3b2").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		// --------------------------------------------------------------
+
+		document.querySelector(".quest1b3").onclick = function(){
+			alert("Правильно!")
+			document.querySelector(".quest3").style.display = "none"
+			document.querySelector(".quest4").style.display = "block"
+		}
+
+		document.querySelector(".quest2b3").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		document.querySelector(".quest3b3").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		// ---------------------------------------------------------------------
+
+		document.querySelector(".quest1b4").onclick = function(){
+			alert("Не правильно!")
+		}
+
+		document.querySelector(".quest2b4").onclick = function(){
+			alert("Правильно!")
+		}
+
+		document.querySelector(".quest3b4").onclick = function(){
+			alert("Не правильно!")
+		}
+
+
+	</script>
+
+</body>
+</html>
